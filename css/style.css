@@ -87,19 +87,21 @@ header {
 
 .user .share {
   margin-left: auto;
-  padding: 3%;
+  padding: 5%;
 }
 .contain {
-  margin-top: auto;
   margin-left: auto;
   background-color: var(--l-grayishBlue);
   padding: 2%;
   border-radius: 50%;
-  width: 10%;
+  width: 2.2rem;
+  height: 2.2rem;
 }
 .contain > img {
+  transform: scale(0.77);
   width: 100%;
   height: auto;
+  margin: auto;
 }
 
 .title {
@@ -109,6 +111,15 @@ header {
   margin-bottom: 1.5rem;
   width: 100%;
   color: var(--vd-grayishBlue);
+}
+
+.wrapper:hover {
+  background-color: rebeccapurple;
+  display: none;
+}
+
+.wrapper2 {
+  display: none;
 }
 
 footer {
