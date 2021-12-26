@@ -2,21 +2,26 @@
 
 const social = document.querySelector(".social");
 const user = document.querySelector(".user");
+const fill = document.querySelector(".share");
+const container = document.querySelector(".contain");
 
-const container = document.querySelector('.contain');
+container.addEventListener('click', toggleStyle);
 
-container.addEventListener('click', ()=>{
 
-    var b = social.style.display;
 
-    if(b=="none"){
-        social.style.display = "block"
+
+const svgPath = document.getElementsByTagName('path')[0];
+
+
+
+const x = window.matchMedia("(min-width: 53rem)");
+    function toggleStyle(){
+        
+        svgPath.classList.toggle("toggleChange");
+        container.classList.toggle("toggleChange");
+        
+        social.classList.toggle('make-visible');
+        
+        console.log(container.classList)
     }
-        else social.style.display="none"
-
-})
-
-function styles(e){
-}
-
-
+    

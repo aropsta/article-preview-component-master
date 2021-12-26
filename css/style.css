@@ -98,6 +98,7 @@ header {
 
 .user {
   display: flex;
+
   flex-direction: row;
   justify-content: left;
   align-items: center;
@@ -105,7 +106,7 @@ header {
   margin: auto;
   position: relative;
 
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
 }
 
 .user .name {
@@ -122,12 +123,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
+
 .contain {
   position: absolute;
   background-color: var(--l-grayishBlue);
   box-sizing: border-box;
-  padding: 2%;
+  padding: 5px;
   border-radius: 50%;
   width: 2.2rem;
   height: 2.2rem;
@@ -142,8 +145,21 @@ header {
   justify-content: center;
   align-items: center;
 }
-.contain > img {
+
+.make-visible {
+  display: flex;
+}
+
+.toggleChange {
+  fill: white;
+  background-color: var(--d-darkBlue);
+}
+.contain > svg {
   transform: scale(0.9);
+}
+
+.middle {
+  padding: 0 2rem;
 }
 
 .title {
@@ -154,14 +170,11 @@ header {
   width: 100%;
   color: var(--vd-grayishBlue);
 }
-.content {
-  padding: 0 2rem;
-}
 
 body {
 }
 
-@media (min-width: 710px) {
+@media (min-width: 50rem) {
   main {
     display: flex;
     flex-direction: row;
